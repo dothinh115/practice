@@ -9,8 +9,11 @@ let firstSectionDataObj = {
 
 const updateFirstSectionPos = (progress) => {
   const widthToUpdate =
-    firstSectionDataObj.width + window.innerWidth * progress;
-  const heightToUpdate = firstSectionDataObj.height + 200 * progress;
+    firstSectionDataObj.width +
+    (window.innerWidth - firstSectionDataObj.width) * progress;
+  const heightToUpdate =
+    firstSectionDataObj.height +
+    (window.innerHeight - firstSectionDataObj.height) * progress;
   gsap.to(firstSectionMainImg, {
     width: widthToUpdate + "px",
     height: heightToUpdate + "px",
