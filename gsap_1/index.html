@@ -3,10 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=\, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Practice</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden bg-slate-900">
+    <main>
+      <section>
+        <div class="pt-[50px] min-h-[1000px] px-8 text-white">
+          <h1 class="text-[45px] font-bold tracking-wide">GSAP PRACTICE</h1>
+        </div>
+      </section>
+      <section>
+        <div class="relative h-fit">
+          <div class="firstSection flex justify-center items-center gap-8">
+            <div class="min-w-[123px] h-[185px] rounded-[6px] overflow-hidden">
+              <img src="./img/1.jpg" class="w-full h-full object-cover" />
+            </div>
+            <div class="min-w-[155px] h-[232px] rounded-[6px] overflow-hidden">
+              <img src="./img/2.jpg" class="w-full h-full object-cover" />
+            </div>
+            <div class="min-w-[310px] h-[465px] rounded-[6px] overflow-hidden">
+              <img src="./img/3.jpg" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="w-[465px] h-[650px] aspect-w-3 aspect-h-5 rounded-[6px] overflow-hidden main flex-shrink-0"
+            >
+              <img src="./img/main.jpg" class="w-full h-full object-cover" />
+            </div>
+            <div class="min-w-[310px] h-[465px] rounded-[6px] overflow-hidden">
+              <img src="./img/4.jpg" class="w-full h-full object-cover" />
+            </div>
+            <div class="min-w-[155px] h-[232px] rounded-[6px] overflow-hidden">
+              <img src="./img/5.jpg" class="w-full h-full object-cover" />
+            </div>
+            <div class="min-w-[123px] h-[185px] rounded-[6px] overflow-hidden">
+              <img src="./img/6.jpg" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div class="px-8 text-white">
+            <p
+              class="sectionText text-[20px] font-semibold tracking-wide w-[450px]"
+            >
+              Within this meticulously arranged AI-generated ensemble lies a
+              tantalizing facade, captivating our gaze. Yet, as we search for
+              the soul of human expression, we question whether algorithms can
+              truly embody the essence of authentic art.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="h-[1000px]"></section>
+    </main>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
