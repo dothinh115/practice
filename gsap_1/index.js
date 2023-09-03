@@ -17,7 +17,6 @@ const updateFirstSectionPos = (progress) => {
   gsap.to(firstSectionMainImg, {
     width: widthToUpdate + "px",
     height: heightToUpdate + "px",
-    maxHeight: heightToUpdate + "px",
     filter: `brightness(${1 - 0.5 * progress})`,
   });
   gsap.to(".firstSectionText", {
@@ -77,4 +76,8 @@ ScrollTrigger.create({
   toggleActions: "restart none reverse none",
   pin: true,
   onUpdate: (self) => updateSecondSectionPos(self.progress),
+});
+
+gsap.set([firstSectionMainImg, ...secondSectionDivs], {
+  filter: "brightness(1)",
 });
